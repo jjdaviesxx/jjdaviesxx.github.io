@@ -1,7 +1,10 @@
+.body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .h1 {
     color: red;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .title_desc {
