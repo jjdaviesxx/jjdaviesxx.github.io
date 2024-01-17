@@ -1,5 +1,17 @@
 .h1 {
-  color: red;
-  text-align: center;
-  background-color: rgb(1, 0, 73);
+    color: red;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title_desc {
+    overflow: hidden;
+    background-color: rgb(195, 183, 126);
+    text-align: center;
+}
+
+.title_desc ul li {
+    size: 10%;
+    display: inline;
+    padding: 10px;
 }
