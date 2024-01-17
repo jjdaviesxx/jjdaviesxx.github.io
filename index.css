@@ -19,3 +19,15 @@ body {
     display: block;
     padding: 10px;
 }
+
+.works {
+    overflow: hidden;
+    background-color: rgb(254,231,21);
+    text-align: center;
+}
+
+.works ul li {
+    size: 10%;
+    display: block;
+    padding: 10px;
+}
