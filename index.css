@@ -8,13 +8,20 @@ body {
     color: white;
 }
 
-.title_desc {
+.desc {
     overflow: hidden;
     background-color: rgb(254,231,21);
     text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+    box-sizing: content-box;
+    width: 500px;
+    height: 500px;
 }
 
-.title_desc ul li {
+.desc ul li {
     size: 10%;
     display: block;
     padding: 10px;
