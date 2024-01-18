@@ -3,6 +3,13 @@ body {
     background-color: rgb(16,24,32);
 }
 
+.nav_list {
+    overflow: hidden;
+    background-color: rgb(51,144,212);
+    text-align: left;
+    color: black;
+}
+
 .h1 {
     text-align: center;
     color: white;
