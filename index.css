@@ -20,10 +20,9 @@ body {
     background-color: rgb(254,231,21);
     text-align: center;
     margin: auto;
-    width: 50%;
 
     box-sizing: content-box;
-    width: 500px;
+    width: 800px;
     height: auto;
 }
 
@@ -38,10 +37,9 @@ body {
     background-color: rgb(254,231,21);
     text-align: center;
     margin: auto;
-    width: 50%;
 
     box-sizing: content-box;
-    width: 500px;
+    width: 800px;
     height: auto;
 }
 
