@@ -25,3 +25,21 @@ body {
     display: block;
     padding: 10px;
 }
+
+.works {
+    overflow: hidden;
+    background-color: rgb(254,231,21);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+
+    box-sizing: content-box;
+    width: 500px;
+    height: auto;
+}
+
+.works ul li {
+    size: 10%;
+    display: block;
+    padding: 10px;
+}
