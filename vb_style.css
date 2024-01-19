@@ -15,19 +15,24 @@ body {
     color: white;
 }
 
-.article {
+.desc {
     overflow: hidden;
     background-color: rgb(254,231,21);
     text-align: center;
     margin: auto;
 
     box-sizing: content-box;
-    width: 800px;
+    width: 100%;
     height: auto;
 }
 
-.article ul li {
-    size: 10%;
-    display: block;
-    padding: 10px;
+.file {
+    overflow: hidden;
+    background-color: rgb(254,231,21);
+    text-align: center;
+    margin: auto;
+
+    box-sizing: content-box;
+    width: 100%;
+    height: auto;
 }
