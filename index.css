@@ -26,12 +26,6 @@ body {
     height: auto;
 }
 
-.desc ul li {
-    size: 10%;
-    display: block;
-    padding: 10px;
-}
-
 .works {
     overflow: hidden;
     background-color: rgb(254,231,21);
@@ -41,10 +35,4 @@ body {
     box-sizing: content-box;
     width: 800px;
     height: auto;
-}
-
-.works ul li {
-    size: 10%;
-    display: block;
-    padding: 10px;
 }
