@@ -15,77 +15,231 @@
         </div>
 
 		<h1 class="h1">Building a Discord Bot in Python - A Written Guide</h1>
-		<h1 class="h1">[WORK IN PROGRESS! :)]</h1>
 
 		<div class="desc">
             <h3>A written tutorial that talks about getting started with creating and programming a discord bot in Python (2024)</h3>
 
 			<h3>Introduction</h3>
-			I see you've taken interest in building a discord bot in Python, or perhaps you’re an expert 
-			getting yourself back into building bot. Well, no matter your level, you're in the right place! 
-			In this article, I'll walk you through the following:
+			<p>I see you've taken interest in building a discord bot in Python, or perhaps you’re an expert getting yourself back into building bot. Well, no matter your level, you're in the right place! In this article, I'll walk you through the following:</p>
 			<ul>
-				<li>Creating the Discord bot from the discord developer portal
-				<li>An overview on bot tokens, and why you should not share them with anyone
-				<li>An overview of Replit, my choice when it comes to programming bots
-				<li>Programming your first discord bot
-				<li>Testing your Python discord bot
-				<li>Conclusion – What’s next?
+				<li>Creating the Discord bot from the discord developer portal</li>
+				<li>An overview on bot tokens, and why you should not share them with anyone</li>
+				<li>An overview of Replit, my choice when it comes to programming bots</li>
+				<li>Programming your first discord bot</li>
+				<li>Testing your Python discord bot</li>
+				<li>Conclusion – What’s next?</li>
 			</ul>
-			It may sound like a lot to cover, but once you've read about them all, and gone to practise 
-			these points, it'll become second nature to you. Let's get started!
+			<p>It may sound like a lot to cover, but once you've read about them all, and gone to practise these points, it'll become second nature to you. All the source code for this tutorial can be found here.</p>
+			<p>Let's get started!</p>
 
 			<h3>Creating a Bot in the Discord Developer Portal</h3>
 			<img src="pictures/dev_portal.png" width="900" height="300">
-			<p>Okay, let me start by talking about the <a href="https://discord.com/developers/applications">discord developer portal</a>, which sounds quite self explanatory. It's where developers go to create their own, well, applications. Its main  purpose is for Discord bots, but there’s other features you can use too.
-			<p>For example, on the side bar, there’s an option called “Server Insights”. This allows you to choose a server you own, or are an admin for, and can see information about the server in general, as well as growth, engagement from users and the members within the community.
-			To access the page shown on the image above, you'll need to sign into your account.
-			<p>On the top right of the screen, next to your Discord profile picture, you can see a button labelled "New Application". Let’s go ahead and click it.
+			<p>Okay, let me start by talking about the <a href="https://discord.com/developers/applications">discord developer portal</a>, which sounds quite self explanatory. It's where developers go to create their own, well, applications. Its main  purpose is for Discord bots, but there’s other features you can use too.</p>
+			<p>For example, on the side bar, there’s an option called “Server Insights”. This allows you to choose a server you own, or are an admin for, and can see information about the server in general, as well as growth, engagement from users and the members within the community. To access the page shown on the image above, you'll need to sign into your account.</p>
+			<p>On the top right of the screen, next to your Discord profile picture, you can see a button labelled "New Application". Let’s go ahead and click it.</p>
 		
 			<img src="pictures/create_bot.png" width="500" height="300">
-			<p>We’re greeted with a small window asking for the name. You can call it anything you want, for this, I’ll just call mine “My Python Bot”. 
-			<p>I know, <i>very</i> creative. 
+			<p>We’re greeted with a small window asking for the name. You can call it anything you want, for this, I’ll just call mine “My Python Bot”.</p> 
+			<p>I know, <i>very</i> creative.</p>
 			<p>We agree with the terms of service, and create our bot.</p>
 
 			<img src="pictures/bot_general_info.png" width="800" height="300">
-			<p>Jeez! That’s a lot of options! And the interface looks super organised too. I love it. 
-			<p>Okay, we created our bot!
-			<p>Keep in mind that the name stated here is <b>not</b> the same as the bot’s name, and you can change the bot’s name and description in the “Bot” option on the side bar. 
+			<p>Jeez! That’s a lot of options! And the interface looks super organised too. I love it.</p>
+			<p>Okay, we created our bot!</p>
+			<p>Keep in mind that the name stated here is <b>not</b> the same as the bot’s name, and you can change the bot’s name and description in the “Bot” option on the side bar.</p>
 			
-			<p>Let’s move on, shall we?
+			<p>Let’s move on, shall we?</p>
 
 			<h3>An Overview on Bot Tokens</h3>
+
+			<img src="pictures/bot_tokens.png" width="700" height="300">
  
 			<p>Let’s move on to discussing bot tokens. In short, they’re basically super long strings that are uniquely assigned to your Discord bot when it’s created. Think of it as your bot’s ID. These will be used to connect our bot to another website, which we’ll use to program our bot later 
-			on. 
+			on.</p>
 			<p>It’s important to note that you do not share your unique bot token with anyone, as anyone with the token can completely take over your bot, so it’s best to keep it to yourself. Which is  what I’m going to do. I don’t want you all stealing my tutorial bot please. 
 			Thank you. 
 
 
-			<p>In the image above, you may notice the “Reset Token” button right next to the profile 
-			picture. If you go ahead and click to reset your bot’s token, it will first give you a popup 
-			message, basically confirming your choice, and then this screen comes up. Your bot’s token 
-			will be where the yellow line is, and they’ll be a copy button to retrieve it. 
-				
-			<p>Also, the profile picture will be a completely random colour, but it seems I was lucky this 
-			time and got my favourite colour: yellow! Awesome! I mean, I need to stay professional. 
+			<p>In the image above, you may notice the “Reset Token” button right next to the profile picture. If you go ahead and click to reset your bot’s token, it will first give you a popup message, basically confirming your choice, and then this screen comes up. Your bot’s token will be where the yellow line is, and they’ll be a copy button to retrieve it.</p>
 
-			<p>Of course, you can change your bot’s profile picture anytime. 
-			<p>We can now move on to talking about the website: Replit! 
+			<img src="pictures/generate_bot_token.png" width="700" height="300">
+				
+			<p>Also, the profile picture will be a completely random colour, but it seems I was lucky this time and got my favourite colour: yellow! Awesome! I mean, I need to stay professional.</p>
+
+			<p>Of course, you can change your bot’s profile picture anytime.</p>
+			<p>We can now move on to talking about the website: Replit!</p>
 				
 			<h3>An Overview of Replit</h3>
+			<img src="pictures/replit_homepage.png" width="700" height="300">
 				
 			<p>Click <a href="https://replit.com/~">here</a> to be taken to Replit.</p>
-			In the above image is Replit’s homepage. It’s used for basically anything coding related: 
-			deployment, selling your application, an AI coding bot, you name it. Of course, there is 
-			indeed a paid plan too, where you can see the button “Join Replit Core”, bottom left. For this 
-			tutorial, we won’t need the paid version, as we’re only using the website to program our 
-			Discord bot. 
+			<p>In the above image is Replit’s homepage. It’s used for basically anything coding related: deployment, selling your application, an AI coding bot, you name it. Of course, there is indeed a paid plan too, where you can see the button “Join Replit Core”, bottom left. For this tutorial, we won’t need the paid version, as we’re only using the website to program our Discord bot.</p>
 			
-			<p>Let’s create ourselves a new “Repl”. 
+			<p>Let’s create ourselves a new “Repl”.</p>
 			
 			<p>We choose Python, name it whatever we want, and go ahead and create it. Once done, we 
-			are greeted with the following screen (well, after a bit of loading)
+			are greeted with the following screen (well, after a bit of loading)</p>
+
+			<img src="pictures/coding_interface.png" width="700" height="300">
+
+			<p>If you’ve had any sort of experience with coding before, this may look self-explanatory to you. However for anyone else, I’ll just do a quick run-through by labelling everything in the above 
+			image:</p>
+			
+			<img src="pictures/interface_explained.png" width="700" height="300">
+			
+			<h3>Programming your First Discord Bot</h3>
+
+			<p>We’ve given an overview of the tools needed for us to build our bot, well except Python, but 
+			there’s plenty of tutorials out there to learn about it. Now, we can get into the process of 
+			how we can program our bot!</p>
+			<p>Before we start, ensure that you have the developer portal open in a new tab before 
+			continuing, as you will need it to get your bot’s token, and handle a certain error we’ll run 
+			into later.</p>
+			
+			<p>Now, let’s get to some actual code. First, we need to import some Python packages, but 
+			before we do, let me quickly go over what modules and packages are.</p>
+			<p>Modules are Python files that contain code (functions, classes, etc.) and you can use the 
+			functions and classes from other modules by typing “import [module/file name]” in your 
+			Python script.</p>
+			<p>Packages, however, are directories used to store modules. These are usually used as a way 
+			to reuse old code, saving time in writing a function and/or class over and over again.</p>
+
+			<p>Now that that’s out the way, let’s move onto the code!</p>
+
+			<img src="pictures/import_discord.png" width="400" height="100">
+			
+			<p>This imports the discord package, then imports the ‘commands’ module from one of the 
+			packages.
+		
+			<img src="pictures/intents.png" width="400" height="100">
+			
+			<p>This defines the intents of your discord bot. In Discord.PY, intents are a way to indicate what events your bot can respond to.</p>
+			<p>In our case, the line about members allows your bot to respond to events related to members; for example, members leaving and joining a server. The line about messagecontent refers to events relating to the user’s messages, such as the on-message command, which we’ll talk about later.</p>
+			
+			<img src="pictures/command_bot.png" width="600" height="100">
+			
+			<p>In short, this line basically defines our bot. It sets the command prefix, which is the character at the start of your commands, and the intents defined previously. 
+			<p>You may be wondering, wouldn’t this be where you enter your bot’s token, to connect it to your program? And the short answer to that question is no. We put the bot token at the end of the program after all the event functions have been defined, in a function called ‘run’. You’ll see it later.
+
+			<img src="pictures/define_on_ready.png" width="700" height="200">
+			
+			<p>This function is run when the bot is ready to be used, hence the text in the print statement. The try-except statement is there when you’re dealing with slash commands. If you don’t  want your bot to use slash commands, you don’t need the try-except code.</p>
+			<p>You may notice the decorator ‘@bot.event’ and the keyword ‘async’. In the context of what we’re creating, the keyword ‘async’ is used to define what’s called an asynchronous function, which can be paused to allow other functions run during execution.</p> 
+			<p>The decorator is put onto various functions, such as on-ready, so that the function executes</p>
+			<p>when a certain event occurs.</p>
+			
+			<img src="pictures/regular_command.png" width="300" height="100">
+			
+			<p>This is how a regular command is created, and it’s much simpler than a slash command. Most of the time, developers only use these sorts of commands when they’re developing and testing a new command. 
+			<p>This won’t be added in our bot’s code, but I added it here so that you know how to create it!</p>
+			
+			<img src="pictures/slash_command_code.png" width="800" height="100">
+			
+			<p>This is the way to define a simple slash command. This command is called “ping”, and when a user uses it, the bot replies “Pong!”</p>
+			<p>These are the main types of Discord commands that users use when interacting with the bot.</p> 
+			<p>Just so you’re not confused, the command name that the user will use on Discord, is the name parameter in the decorator (i.e. the user will type ‘/ping’). You may also notice the description parameter in the decorator. A lot of the time, people will give a description for all of their slash commands, so it’s easier for people to use them.</p> 
+			
+			<img src="pictures/bot_run.png" width="500" height="100">
+
+			<p>Finally, this is the run command that executes your discord bot. It’s also where you add your 
+			bot’s token from the developer portal. Be sure to refer to the section “An Overview on Bot 
+			Tokens” to get your bot token!</p>
+			<p>Putting all the code together (except for the @bot.command code snippet) into Replit, you’ll 
+			see the following:</p>
+
+			<img src="pictures/full_code.png" width="500" height="600">
+
+			<p>You may notice that the package “discord” is underlined in red, meaning that the package isn’t installed.</p> 
+			<p>Yet.</p> 
+			<p>Two more things before we test out our bot.</p> 
+			<p>The first things is how we can use the secrets tool.</p> 
+			<p>Scroll down the “Tools” list until you find “Secrets”. We can use this to store our bot token.</p> 
+			<p>Once you click the secrets tool, it appears as a tab next to our terminal. If you type as I did here, head back to the dev portal, copy your token, place it in the “value” textbox and press “Add Secret”, it should give you two lines of code.</p>
+
+			<img src="pictures/secrets_tab.png" width="600" height="600">
+
+			<p>Add the first line to where your imports are, and the second line just before the bot run command:</p>
+
+			<img src="pictures/url_generator_circled.png" width="600" height="500">
+			
+			<p>The second thing is to now invite the bot to a Discord server. To do this, we need to generate a URL. This is used to invite your bot to other servers, so if you wanted to create an “invite” (slash) command, you’ll need this URL. Once on the URL generator page, tick the boxes as I did in the following image:</p>
+			
+			<img src="pictures/url_generator.png" width="800" height="500">
+
+			<p>Scrolling to the bottom of the page, you’ll get the invite URL.</p>
+ 
+			<img src="pictures/generated_url.png" width="800" height="300">
+
+			<p>Open this link in a new tab, go through the verification and the bot should be added to your Discord server. Go ahead and open up Discord to check your bot is in your chosen server.</p>
+			
+			<img src="pictures/bot_offline.png" width="400" height="500">
+			
+			<p>Now that your bot has entered your testing server, we can now actually run our code and see if things will go smoothly. </p>
+			
+			<h3>Testing Your Python Discord Bot </h3>
+
+			<p>We’ve got the code for our bot, and we’ve added the bot to a Discord server! Now, we can 
+			go ahead and run it, see if we get any errors, or if the bot runs smoothly.</p>
+			<p>We can click the green “execute” button right at the top, or press Control + Enter to run the 
+			code. Let’s check the terminal for our output:</p>
+
+			<img src="pictures/long_error.png" width="600" height="600">
+			
+			<p>So, good news: the program noticed that we didn’t have the correct packages installed, so it 
+			installed them for us.</p>
+			<p>Bad news: We got an error, and a fairly long one too. When we get errors in Python, almost 
+			all the time we only need to look at the end of the error:</p>
+
+			<img src="pictures/bottom_of_error.png" width="600" height="100">
+			
+			<p>Hmmm, it looks like we haven’t set something up in the discord developer portal. Let’s go back to the portal and check what we need to do.</p>
+
+			<img src="pictures/gateway_intents_not_on.png" width="600" height="300">
+			
+			<p>Reading the error closely, we can see that the issue is to do with not switching the above switches on. Easily fixable.</p>
+			<p>After switching on all 3 intents switches, let’s go back to Replit, and try to run our bot again. 
+			<p>Here’s the new output:</p>
+
+			<img src="pictures/bot_terminal.png" width="600" height="200">
+
+			<p>Looks like things are running smoothly! We better check Discord.</p>
+
+			<img src="pictures/bot_now_online.png" width="400" height="500">
+ 
+			<p>Our bot is online, great! Now, we can test the ping-pong command:</p>
+			
+			<img src="pictures/testing_slash_command.png" width="400" height="600">
+			
+			<p>It worked! We just created our first Discord bot, and ran a slash command with it!</p>
+			
+			<h3>Conclusion – What’s Next?</h3>
+			
+			<p>So, we covered a lot in this article, so let’s do a quick summary.
+			<ol>
+				<li>We first learned about the Discord Developer Portal, created by the team behind 
+					Discord, for users to create their own bots and/or apps to do anything they wish, as 
+					long as it follows Discord’s TOS (Terms of Service). Using this, we created a new 
+					Discord application.</li>
+				<li>We then talked about bot tokens, and how important they were for programming 
+					our discord bot.</li>
+				<li>After, we talked about Replit, a highly popular site for all things coding. It provides a 
+					way for users to sell and deploy their applications, and even has an AI coding pal 
+					(only in the paid version). We created what’s called a “Repl”, and talked about the 
+					interface, and where the tools were.</li>
+				<li>We entered some basic code and I explained what each code snippet does. We had to do two things before testing our code: the first was to check out the 
+					“Secrets” tool for hiding our bot token out of the code. The second was to invite the 
+					bot to a Discord server, using the Developer Portal.</li>
+				<li>We ran out code for the first time, and encountered an error about “Privileged 
+					Gateway Intents”, which was easily fixable by toggling a few switches on. 
+					We ran our code a second time, and everything ran smoothly: the bot came online, 
+					and when we called the “Ping” command, the bot responded.</li>
+			</ol>
+
+			<p>The next steps to enhance your bot is to check out various Python tutorials, as well as 
+			further readings on Discord bots. You can program your Discord bot to do almost anything 
+			you want.</p>
+			<p>Thank you very much for reading this paper, and I hope whoever has read this, found it 
+			useful.</p>
 		</div>
 	</body>
 </html>
