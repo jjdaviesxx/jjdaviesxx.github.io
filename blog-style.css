@@ -3,10 +3,6 @@ body {
     background-color: rgb(16,24,32);
 }
 
-.v {
-    color: white;
-}
-
 .nav_list {
     overflow: hidden;
     background-color: rgb(51,144,212);
@@ -28,13 +24,4 @@ body {
     box-sizing: content-box;
     width: 1000px;
     height: auto;
-}
-
-.desc br {
-    background-color: black;
-    height: 10px;
-}
-
-.mystuff {
-    display: inline;
 }
