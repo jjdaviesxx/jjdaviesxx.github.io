@@ -58,6 +58,10 @@ body {
     height: auto;
 }
 
+.live {
+    color: rgb(198, 0, 0);
+}
+
 .contact {
     overflow: hidden;
     background-color: rgb(254,231,21);
