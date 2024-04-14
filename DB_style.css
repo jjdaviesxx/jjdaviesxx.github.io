@@ -18,7 +18,6 @@ body {
 .desc {
     overflow: hidden;
     background-color: rgb(254,231,21);
-    text-align: center;
     margin: auto;
 
     box-sizing: content-box;
