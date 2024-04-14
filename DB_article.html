@@ -111,42 +111,66 @@
 
 			<code>
 				import discord
+				from discord.ext import commands
 			</code>
-
-			<img src="pictures/import_discord.png" width="400" height="100">
 			
 			<p>This imports the discord package, then imports the ‘commands’ module from one of the 
-			packages.
-		
-			<img src="pictures/intents.png" width="400" height="100">
+			packages.</p>
+
+			<code>
+				intents = discord.Intents.default()
+				intents.members = True
+				intents.message_content = True
+			</code>
 			
 			<p>This defines the intents of your discord bot. In Discord.PY, intents are a way to indicate what events your bot can respond to.</p>
 			<p>In our case, the line about members allows your bot to respond to events related to members; for example, members leaving and joining a server. The line about messagecontent refers to events relating to the user’s messages, such as the on-message command, which we’ll talk about later.</p>
 			
-			<img src="pictures/command_bot.png" width="600" height="100">
+			<code>
+				bot = commands.Bot(command_prefix='!', intents=intents)
+			</code>
 			
 			<p>In short, this line basically defines our bot. It sets the command prefix, which is the character at the start of your commands, and the intents defined previously. 
 			<p>You may be wondering, wouldn’t this be where you enter your bot’s token, to connect it to your program? And the short answer to that question is no. We put the bot token at the end of the program after all the event functions have been defined, in a function called ‘run’. You’ll see it later.
 
-			<img src="pictures/define_on_ready.png" width="700" height="200">
+			<code>
+				@bot.event
+				async def on_ready():
+					print("Bot is ready to be used!")
+					try:
+						synced = await bot.tree.sync()
+						print(f"Synced {len(synced)} commands")
+					except Exception as e:
+						print(f"Error while syncing commands: {len(synced)}")
+			</code>
 			
 			<p>This function is run when the bot is ready to be used, hence the text in the print statement. The try-except statement is there when you’re dealing with slash commands. If you don’t  want your bot to use slash commands, you don’t need the try-except code.</p>
 			<p>You may notice the decorator ‘@bot.event’ and the keyword ‘async’. In the context of what we’re creating, the keyword ‘async’ is used to define what’s called an asynchronous function, which can be paused to allow other functions run during execution.</p> 
 			<p>The decorator is put onto various functions, such as on-ready, so that the function executes</p>
 			<p>when a certain event occurs.</p>
 			
-			<img src="pictures/regular_command.png" width="300" height="100">
+			<code>
+				@bot.command()
+				async def ping(ctx):
+					await ctx.send("Pong!")
+			</code>
 			
 			<p>This is how a regular command is created, and it’s much simpler than a slash command. Most of the time, developers only use these sorts of commands when they’re developing and testing a new command. 
 			<p>This won’t be added in our bot’s code, but I added it here so that you know how to create it!</p>
 			
-			<img src="pictures/slash_command_code.png" width="800" height="100">
+			<code>
+				@bot.tree.command( name="ping", description="a simple ping pong command." )
+				async def ping(interaction: discord.Interaction):
+					await interaction.response.send_message("Pong!")
+			</code>
 			
 			<p>This is the way to define a simple slash command. This command is called “ping”, and when a user uses it, the bot replies “Pong!”</p>
 			<p>These are the main types of Discord commands that users use when interacting with the bot.</p> 
 			<p>Just so you’re not confused, the command name that the user will use on Discord, is the name parameter in the decorator (i.e. the user will type ‘/ping’). You may also notice the description parameter in the decorator. A lot of the time, people will give a description for all of their slash commands, so it’s easier for people to use them.</p> 
 			
-			<img src="pictures/bot_run.png" width="500" height="100">
+			<code>
+				bot.run("YOUR BOT TOKEN HERE")
+			</code>
 
 			<p>Finally, this is the run command that executes your discord bot. It’s also where you add your 
 			bot’s token from the developer portal. Be sure to refer to the section “An Overview on Bot 
