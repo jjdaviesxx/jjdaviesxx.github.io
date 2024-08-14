@@ -1,6 +1,13 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(16,24,32);
+    animation-name: fadeIn;
+    animation-duration: 5s;
 }
 
 .v {
@@ -9,7 +16,6 @@ body {
 
 .nav_list {
     overflow: hidden;
-    background-color: rgb(75, 131, 255);
 }
   
 .nav_list a {
