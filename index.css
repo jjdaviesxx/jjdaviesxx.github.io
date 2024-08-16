@@ -8,7 +8,6 @@ body {
     background-color: rgb(16,24,32);
     animation-name: fadeIn;
     animation-duration: 5s;
-    text-align: left;
 }
 
 .v {
@@ -17,10 +16,11 @@ body {
 
 .nav_list {
     overflow: hidden;
+    padding-left: 3%;
 }
   
 .nav_list a {
-    float: right;
+    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -40,50 +40,48 @@ body {
 }
 
 .desc {
-    overflow: hidden;
+    margin-left: 40%;
+    width: 40%;
+    border: 2px solid white;
     background-color: rgb(254,231,21);
+    border-radius: 20px;
     text-align: center;
-    margin: auto;
+}
 
-    box-sizing: content-box;
-    width: 800px;
-    height: auto;
+.intro {
+    margin-left: 15%;
+    width: 40%;
+    border: 2px solid white;
+    background-color: rgb(254,231,21);
+    border-radius: 20px;
+    text-align: center;
 }
 
 .updates {
-    overflow: hidden;
+    margin-left: 40%;
+    width: 40%;
+    border: 2px solid white;
     background-color: rgb(254,231,21);
-    text-align: center;
-    margin: auto;
-
-    box-sizing: content-box;
-    width: 800px;
     height: auto;
-}
-
-.works {
-    overflow: hidden;
-    background-color: rgb(254,231,21);
+    border-radius: 20px;
     text-align: center;
-    margin: auto;
-
-    box-sizing: content-box;
-    width: 800px;
-    height: auto;
 }
 
 .live {
+    margin-left: 15%;
+    width: 40%;
     color: rgb(198, 0, 0);
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(254,231,21);
+    text-align: center;
 }
 
 .contact {
     border: 2px solid white;
     border-radius: 20px;
-    overflow: hidden;
     background-color: rgb(254,231,21);
-    text-align: center;
     margin: auto;
-    box-sizing: content-box;
-    width: 800px;
-    height: auto;
+    width: 50%;
+    text-align: center;
 }
