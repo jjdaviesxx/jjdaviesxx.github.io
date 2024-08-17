@@ -11,6 +11,10 @@ body {
     animation-duration: 5s;
 }
 
+p {
+    font-size: 20px;
+}
+
 .v {
     color: white;
 }
@@ -58,7 +62,7 @@ body {
     text-align: center;
 }
 
-.updates {
+.skills {
     margin-left: 40%;
     width: 40%;
     border: 2px solid white;
@@ -68,8 +72,18 @@ body {
     text-align: center;
 }
 
-.live {
+.updates {
     margin-left: 15%;
+    width: 40%;
+    border: 2px solid white;
+    background-color: rgb(254,231,21);
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.live {
+    margin-left: 40%;
     width: 40%;
     color: rgb(198, 0, 0);
     border: 2px solid white;
@@ -83,8 +97,7 @@ body {
     border-radius: 20px;
     background-color: rgb(254,231,21);
     margin: auto;
-    width: 50%;
-    height: 250px;
+    width: 40%;
     margin-top: auto;
     text-align: center;
 }

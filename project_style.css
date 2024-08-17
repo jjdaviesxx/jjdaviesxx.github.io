@@ -44,16 +44,7 @@ body {
     margin: auto;
     width: 70%;
     border: 2px solid white;
-    background-color: rgb(254,231,21);
     border-radius: 20px;
+    background-color: rgb(254,231,21);
     text-align: center;
-}
-
-.desc br {
-    background-color: black;
-    height: 10px;
-}
-
-.mystuff {
-    display: inline;
 }
