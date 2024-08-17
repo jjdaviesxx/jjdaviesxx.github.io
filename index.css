@@ -5,8 +5,10 @@
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: rgb(16,24,32);
-    background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgb(1, 72, 113) 50%, rgb(2, 140, 221) 100%);
+    /* background: rgb(16,24,32);
+    background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgb(1, 72, 113) 50%, rgb(2, 140, 221) 100%); */
+    background-image: url("pictures/background_img.png");
+    background-size: cover;
     animation-name: fadeIn;
     animation-duration: 5s;
 }
@@ -72,8 +74,20 @@ p {
     text-align: center;
 }
 
-.updates {
+.education {
     margin-left: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+    border: 2px solid white;
+    background-color: rgb(254,231,21);
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.updates {
+    margin-left: 40%;
     width: 40%;
     border: 2px solid white;
     background-color: rgb(254,231,21);
@@ -83,7 +97,7 @@ p {
 }
 
 .live {
-    margin-left: 40%;
+    margin-left: 15%;
     width: 40%;
     color: rgb(198, 0, 0);
     border: 2px solid white;
