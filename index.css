@@ -41,6 +41,10 @@ p {
     display: inline;
 }
 
+.nav_list:hover {
+    color: blue;
+}
+
 .h1 {
     text-align: center;
     color: white;
