@@ -119,3 +119,34 @@ p {
     margin-top: auto;
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    .desc {
+        width: 100%;
+        margin: auto;
+    }
+    .intro {
+        width: 100%;
+        margin: auto;
+    }
+    .skills {
+        width: 100%;
+        margin: auto;
+    }
+    .education {
+        width: 100%;
+        margin: auto;
+    }
+    .updates {
+        width: 100%;
+        margin: auto;
+    }
+    .live {
+        width: 100%;
+        margin: auto;
+    }
+    .contact {
+        width: 100%;
+        margin: auto;
+    }
+}
