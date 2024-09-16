@@ -8,10 +8,26 @@
 
 	<body class="body">
         <div class="nav_list">
-			<a class="element" href="index.html">Home</a>
-			<a class="element" href="projects.html">My Works</a>
-			<a class="element" href="https://jjdblogs.org.uk/">Blog</a>
+			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="index.html">Home</a>
+			<a id="myworks" class="element" onmouseover="mouseHover('myworks')" onmouseleave="mouseLeave('myworks')" href="projects.html">My Works</a>
+			<a id="mydesigns" class="element" onmouseover="mouseHover('mydesigns')" onmouseleave="mouseLeave('mydesigns')" href="web_designs.html">My Designs</a>
+			<a id="blog" class="element" onmouseover="mouseHover('blog')" onmouseleave="mouseLeave('blog')" href="https://jjdblogs.org.uk/">Blog</a>
         </div>
+
+		<script>
+			function mouseHover(elementId) {
+                let e = document.getElementById(elementId);
+                let len = elementId.length;
+
+                e.style.borderBottom = 'solid rgb(1, 140, 221)';
+                e.style.paddingBottom = '5px';
+            }
+            function mouseLeave(elementId) {
+                let e = document.getElementById(elementId);
+                e.style.borderBottom = '0px solid black';
+                e.style.paddingBottom = '0px';
+            }
+		</script>
 
 		<h1 class="h1">Timetabling Application with Rewards System - UI Designs</h1>
 		<hr style="color: white;">
