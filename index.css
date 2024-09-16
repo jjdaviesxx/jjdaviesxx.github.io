@@ -48,6 +48,7 @@ p {
 .h1 {
     text-align: center;
     color: white;
+    font-size: 3em;
 }
 
 .desc {
@@ -104,6 +105,16 @@ p {
     border: 2px solid white;
     border-radius: 20px;
     background-color: rgb(254,231,21);
+    text-align: center;
+}
+
+.github {
+    margin-left: 40%;
+    width: 40%;
+    border: 2px solid white;
+    background-color: rgb(254,231,21);
+    height: auto;
+    border-radius: 20px;
     text-align: center;
 }
 
