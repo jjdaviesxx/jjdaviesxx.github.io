@@ -118,6 +118,15 @@ p {
     text-align: center;
 }
 
+.webdesigns {
+    margin-left: 15%;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(254,231,21);
+    text-align: center;
+}
+
 .contact {
     border: 2px solid white;
     border-radius: 20px;

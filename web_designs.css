@@ -39,8 +39,19 @@ p {
 }
 
 .desc {
-    margin-left: 40%;
-    width: 40%;
+    width: 60%;
+    margin: auto;
+    border: 2px solid white;
+    background-color: rgb(254,231,21);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.theDesigns {
+    width: 60%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
     border: 2px solid white;
     background-color: rgb(254,231,21);
     border-radius: 20px;
