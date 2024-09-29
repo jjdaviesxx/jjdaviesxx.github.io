@@ -1,7 +1,9 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url("pictures/background_img.png");
+    background: rgb(16,24,32);
+    background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgba(4,88,136,1) 50%, rgba(0,161,251,1) 100%);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 p {
